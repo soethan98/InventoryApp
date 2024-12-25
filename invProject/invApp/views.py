@@ -7,7 +7,7 @@ def home_view(request):
     return render(request=request,template_name= 'invApp/home.html')
 
 # Create View
-def product_view(request):
+def product_create_view(request):
     form = ProductForm()
     if request.method == "POST":
         form = ProductForm(request)
